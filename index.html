@@ -1,13 +1,142 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!-- css external -->
-    <link rel="stylesheet" href="css\style.css">
+    <title>Portfolio Raffa</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <script src="js\script.js"></script>
+    <div id="nameModal" class="modal">
+        <div class="modal-content">
+            <h2>🌟 Selamat Datang! 🌟</h2>
+            <p style="color: white; margin-bottom: 20px;">Silakan masukkan nama Anda untuk melanjutkan</p>
+            <input type="text" id="visitorName" placeholder="Masukkan nama Anda...">
+            <button onclick="submitName()">Masuk ke Website</button>
+        </div>
+    </div>
+
+    <header>
+        <div class="header-content">
+            <div class="logo"></div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#profile">Our Profile</a></li>
+                    <li><a href="#headquarter">Portofolio</a></li>
+                    <li><a href="#message">Message Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="home">
+            <div class="container">
+                <h1 class="welcome-text" id="welcomeText">Hi [Name], Welcome To Website</h1>
+                <p class="subtitle">Selamat datang di website portofolio saya. Silakan jelajahi karya dan pengalaman saya.
+                    saya adalah seorang siswa dari sekolah SMK TELKOM 1 MEDAN yang berfokus pada rekaya perangkat lunak.
+                    Melalui portofolio ini,Anda akan menemukan berbagai karya saya yang saya buat selama saya sekolah disini.
+                    Setiap proyek yang saya buat adalah hasil kombinasi kreativitas,kemampuan teknis,dan perhatian pada detail untuk memberikan hasil terbaik
+                </p>
+            </div>
+        </section>
+
+        <section id="profile" class="profile">
+            <div class="container">
+                <h2>Our Profile</h2>
+                <div class="profile-content">
+                    <div class="profile-text">
+                        <h3 style="margin-bottom: 20px; color: #667eea;"> profil saya</h3>
+                        <p>Saya adalah seorang pelajar dari SMK Telkom 1 Medan yang memiliki minat besar dalam dunia Web Development dan UI/UX Design. Saya sedang mengembangkan keahlian dalam HTML, CSS, JavaScript, serta tools desain seperti Figma, dengan tujuan menciptakan pengalaman digital yang menarik dan fungsional.
+Saya percaya bahwa desain dan teknologi harus saling mendukung untuk menghasilkan solusi yang tidak hanya indah secara visual, tetapi juga nyaman digunakan. Dalam setiap proyek, saya berusaha mengutamakan kualitas tampilan, kemudahan penggunaan, dan performa yang optimal.
+Selain keterampilan teknis, saya juga belajar untuk meningkatkan kemampuan manajemen waktu dan kerja sama tim. Pengalaman belajar dan mengerjakan berbagai tugas sekolah serta proyek pribadi membuat saya terbiasa menghadapi tantangan dan beradaptasi dengan cepat.
+Portofolio ini adalah bukti semangat dan komitmen saya dalam mengejar karier di bidang teknologi dan desain digital. </p>
+                        <br>
+                        
+                    </div>
+                    <div class="profile-image">
+                        <div class="profile-photo">
+                           <img src="img\IMG_5179 (2).jpg" alt="profile-photo" class="profile-photo">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="headquarter" class="headquarter">
+            <div class="container">
+                <h2>Portofolio</h2>
+                <div class="cities">
+                    <div class="city">
+                        <div class="city-icon">🏢</div>
+                        <h3>Jakarta</h3>
+                        <p>Kantor pusat kami berlokasi di Jakarta, menjadi center untuk operasional utama perusahaan.</p>
+                    </div>
+                    <div class="city">
+                        <div class="city-icon">🌆</div>
+                        <h3>Bandung</h3>
+                        <p>Kantor cabang Bandung fokus pada pengembangan teknologi dan inovasi produk.</p>
+                    </div>
+                    <div class="city">
+                        <div class="city-icon">🌊</div>
+                        <h3>Surabaya</h3>
+                        <p>Kantor cabang Surabaya melayani wilayah Indonesia bagian timur dengan pelayanan terbaik.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="message" class="message">
+            <div class="container">
+                <h2>Message Us</h2>
+                <div class="message-container">
+                    <div class="message-form">
+                        <form id="messageForm">
+                            <div class="form-group">
+                                <label for="name">Nama:</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="phone">Nomor Telp:</label>
+                                <input type="tel" id="phone" name="phone" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label>Jenis Kelamin:</label>
+                                <div class="radio-group">
+                                    <label><input type="radio" name="gender" value="Laki-laki" required> Laki-laki</label>
+                                    <label><input type="radio" name="gender" value="Perempuan" required> Perempuan</label>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Pesan:</label>
+                                <textarea id="messageText" name="message" rows="4" required></textarea>
+                            </div>
+                            
+                            <button type="submit" class="submit-btn">Kirim Pesan</button>
+                        </form>
+                    </div>
+                    
+                    <div class="message-display">
+                        <h3>📝 Pesan Terbaru</h3>
+                        <div id="messagesContainer">
+                            <p style="text-align: center; color: #666; font-style: italic;">Belum ada pesan yang dikirim.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Portfolio Website. Created By [Your Name]</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
