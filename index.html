@@ -3,28 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Raffa</title>
+    <title>Portfolio Raffa - Web Developer & UI/UX Designer</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <div id="nameModal" class="modal">
         <div class="modal-content">
             <h2>🌟 Selamat Datang! 🌟</h2>
-            <p style="color: white; margin-bottom: 20px;">Silakan masukkan nama Anda untuk melanjutkan</p>
-            <input type="text" id="visitorName" placeholder="Masukkan nama Anda...">
+            <p>Silakan masukkan nama Anda untuk melanjutkan ke portfolio saya</p>
+            <input type="text" id="visitorName" placeholder="Masukkan nama Anda..." maxlength="30">
             <button onclick="submitName()">Masuk ke Website</button>
         </div>
     </div>
 
     <header>
         <div class="header-content">
-            <div class="logo"></div>
+            <div class="logo">R</div>
             <nav>
                 <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#profile">Our Profile</a></li>
-                    <li><a href="#headquarter">Portofolio</a></li>
-                    <li><a href="#message">Message Us</a></li>
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#profile" class="nav-link">About Me</a></li>
+                    <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                    <li><a href="#message" class="nav-link">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -33,55 +33,71 @@
     <main>
         <section id="home" class="home">
             <div class="container">
-                <h1 class="welcome-text" id="welcomeText">Hi [Name], Welcome To Website</h1>
-                <p class="subtitle">Selamat datang di website portofolio saya. Silakan jelajahi karya dan pengalaman saya.
-                    saya adalah seorang siswa dari sekolah SMK TELKOM 1 MEDAN yang berfokus pada rekaya perangkat lunak.
-                    Melalui portofolio ini,Anda akan menemukan berbagai karya saya yang saya buat selama saya sekolah disini.
-                    Setiap proyek yang saya buat adalah hasil kombinasi kreativitas,kemampuan teknis,dan perhatian pada detail untuk memberikan hasil terbaik
-                </p>
+                <div class="home-content">
+                    <h1 class="welcome-text" id="welcomeText">Hi Guest, Welcome To My Portfolio</h1>
+                    <p class="subtitle">
+                        Selamat datang di portfolio digital saya! Saya adalah seorang siswa SMK Telkom 1 Medan yang passionate dalam bidang Web Development dan UI/UX Design. 
+                        Di sini Anda akan menemukan koleksi karya terbaik saya yang menggabungkan kreativitas, teknologi modern, dan perhatian detail untuk menciptakan pengalaman digital yang menakjubkan.
+                    </p>
+                    <a href="#portfolio" class="cta-button">Lihat Portfolio Saya</a>
+                </div>
             </div>
         </section>
 
         <section id="profile" class="profile">
             <div class="container">
-                <h2>Our Profile</h2>
+                <h2>About Me</h2>
                 <div class="profile-content">
                     <div class="profile-text">
-                        <h3 style="margin-bottom: 20px; color: #667eea;"> profil saya</h3>
-                        <p>Saya adalah seorang pelajar dari SMK Telkom 1 Medan yang memiliki minat besar dalam dunia Web Development dan UI/UX Design. Saya sedang mengembangkan keahlian dalam HTML, CSS, JavaScript, serta tools desain seperti Figma, dengan tujuan menciptakan pengalaman digital yang menarik dan fungsional.
-Saya percaya bahwa desain dan teknologi harus saling mendukung untuk menghasilkan solusi yang tidak hanya indah secara visual, tetapi juga nyaman digunakan. Dalam setiap proyek, saya berusaha mengutamakan kualitas tampilan, kemudahan penggunaan, dan performa yang optimal.
-Selain keterampilan teknis, saya juga belajar untuk meningkatkan kemampuan manajemen waktu dan kerja sama tim. Pengalaman belajar dan mengerjakan berbagai tugas sekolah serta proyek pribadi membuat saya terbiasa menghadapi tantangan dan beradaptasi dengan cepat.
-Portofolio ini adalah bukti semangat dan komitmen saya dalam mengejar karier di bidang teknologi dan desain digital. </p>
-                        <br>
+                        <h3>Profil Lengkap</h3>
+                        <p>Saya adalah seorang pelajar dari SMK Telkom 1 Medan yang memiliki passion mendalam dalam dunia teknologi digital, khususnya Web Development dan UI/UX Design. Perjalanan saya dalam dunia coding dimulai dari rasa ingin tahu yang besar tentang bagaimana website dan aplikasi yang indah dapat tercipta.</p>
                         
+                        <p>Dengan menguasai teknologi seperti HTML5, CSS3, JavaScript ES6+, dan tools design seperti Figma, saya selalu berusaha menciptakan karya yang tidak hanya menarik secara visual, tetapi juga fungsional dan user-friendly. Setiap project yang saya kerjakan adalah kombinasi antara estetika modern dan pengalaman pengguna yang optimal.</p>
+                        
+                        <p>Saya percaya bahwa desain yang baik adalah desain yang dapat berkomunikasi dengan efektif kepada penggunanya. Oleh karena itu, dalam setiap karya saya selalu mengutamakan prinsip-prinsip design thinking, accessibility, dan responsive design untuk memastikan pengalaman yang konsisten di berbagai perangkat.</p>
+                        
+                        <p>Portfolio ini adalah representasi dari dedikasi, kreativitas, dan komitmen saya dalam mengembangkan kemampuan di bidang teknologi digital. Mari kita ciptakan sesuatu yang luar biasa bersama!</p>
                     </div>
                     <div class="profile-image">
-                        <div class="profile-photo">
-                           <img src="img\IMG_5179 (2).jpg" alt="profile-photo" class="profile-photo">
+                        <img src="img/IMG_5179 (2).jpg" alt="Profile Photo Raffa" class="profile-photo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="profile-photo-fallback" style="display: none;">
+                            RAFFA<br><small>Web Developer</small>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="headquarter" class="headquarter">
+        <section id="portfolio" class="portfolio">
             <div class="container">
-                <h2>Portofolio</h2>
-                <div class="cities">
-                    <div class="city">
-                        <div class="city-icon">🏢</div>
-                        <h3>Jakarta</h3>
-                        <p>Kantor pusat kami berlokasi di Jakarta, menjadi center untuk operasional utama perusahaan.</p>
+                <h2>My Portfolio</h2>
+                <div class="portfolio-grid">
+                    <div class="portfolio-item">
+                        <h3>🎨 KPK Hura Hura - UI/UX Design</h3>
+                        <p>Design aplikasi modern untuk event management dengan fokus pada user experience yang intuitif dan visual yang menarik. Dibuat menggunakan Figma dengan pendekatan design thinking.</p>
+                        <div class="figma-embed-wrapper">
+                            <iframe
+                                src="https://www.figma.com/embed?embed_host=share&url=https://www.figma.com/design/tO26hyOl51pXiYmmrvlms9/KPK-HURA-HURA-?node-id=0-1&t=R9tYXxHkKy40VOgF-1"
+                                allowfullscreen
+                                title="Figma - KPK HURA HURA"
+                                loading="lazy">
+                            </iframe>
+                        </div>
+                        <a href="https://www.figma.com/design/tO26hyOl51pXiYmmrvlms9/KPK-HURA-HURA-?node-id=0-1&t=h61ltUImo843JfXm-1" target="_blank" class="view-project-btn">Lihat di Figma</a>
                     </div>
-                    <div class="city">
-                        <div class="city-icon">🌆</div>
-                        <h3>Bandung</h3>
-                        <p>Kantor cabang Bandung fokus pada pengembangan teknologi dan inovasi produk.</p>
-                    </div>
-                    <div class="city">
-                        <div class="city-icon">🌊</div>
-                        <h3>Surabaya</h3>
-                        <p>Kantor cabang Surabaya melayani wilayah Indonesia bagian timur dengan pelayanan terbaik.</p>
+
+                    <div class="portfolio-item">
+                        <h3>📱 GadgetHub - E-commerce App</h3>
+                        <p>Design prototype aplikasi e-commerce untuk gadget dengan interface yang modern dan user-friendly. Menampilkan konsep shopping experience yang optimal untuk pengguna mobile.</p>
+                        <div class="figma-embed-wrapper">
+                            <iframe
+                                src="https://www.figma.com/embed?embed_host=share&url=https://www.figma.com/proto/qHUiVrk7QBfqG6kLYAYrSm/GadgetHub---Kel-5?node-id=8-120&starting-point-node-id=29%3A141&t=eZQXW9FGzsU9h6ou-1"
+                                allowfullscreen
+                                title="Figma - GadgetHub Prototype"
+                                loading="lazy">
+                            </iframe>
+                        </div>
+                        <a href="https://www.figma.com/proto/qHUiVrk7QBfqG6kLYAYrSm/GadgetHub---Kel-5?node-id=8-120&starting-point-node-id=29%3A141&t=eZQXW9FGzsU9h6ou-1" target="_blank" class="view-project-btn">Lihat Prototype</a>
                     </div>
                 </div>
             </div>
@@ -89,41 +105,51 @@ Portofolio ini adalah bukti semangat dan komitmen saya dalam mengejar karier di 
 
         <section id="message" class="message">
             <div class="container">
-                <h2>Message Us</h2>
+                <h2>Contact Me</h2>
                 <div class="message-container">
                     <div class="message-form">
+                        <h3>💌 Kirim Pesan</h3>
                         <form id="messageForm">
                             <div class="form-group">
-                                <label for="name">Nama:</label>
-                                <input type="text" id="name" name="name" required>
+                                <label for="name">📝 Nama Lengkap:</label>
+                                <input type="text" id="name" name="name" required placeholder="Masukkan nama lengkap Anda">
                             </div>
                             
                             <div class="form-group">
-                                <label for="phone">Nomor Telp:</label>
-                                <input type="tel" id="phone" name="phone" required>
+                                <label for="phone">📞 Nomor Telepon:</label>
+                                <input type="tel" id="phone" name="phone" required placeholder="Contoh: 0812-3456-7890">
                             </div>
                             
                             <div class="form-group">
-                                <label>Jenis Kelamin:</label>
+                                <label for="birthdate">🎂 Tanggal Lahir:</label>
+                                <input type="date" id="birthdate" name="birthdate" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label>👤 Jenis Kelamin:</label>
                                 <div class="radio-group">
-                                    <label><input type="radio" name="gender" value="Laki-laki" required> Laki-laki</label>
-                                    <label><input type="radio" name="gender" value="Perempuan" required> Perempuan</label>
+                                    <label><input type="radio" name="gender" value="Laki-laki" required> 👨 Laki-laki</label>
+                                    <label><input type="radio" name="gender" value="Perempuan" required> 👩 Perempuan</label>
                                 </div>
                             </div>
                             
                             <div class="form-group">
-                                <label for="message">Pesan:</label>
-                                <textarea id="messageText" name="message" rows="4" required></textarea>
+                                <label for="messageText">💭 Pesan Anda:</label>
+                                <textarea id="messageText" name="message" rows="4" required placeholder="Ceritakan tentang project atau kolaborasi yang Anda inginkan..."></textarea>
                             </div>
                             
-                            <button type="submit" class="submit-btn">Kirim Pesan</button>
+                            <button type="submit" class="submit-btn">🚀 Kirim Pesan</button>
                         </form>
                     </div>
                     
                     <div class="message-display">
-                        <h3>📝 Pesan Terbaru</h3>
+                        <h3>📨 Pesan Terbaru</h3>
                         <div id="messagesContainer">
-                            <p style="text-align: center; color: #666; font-style: italic;">Belum ada pesan yang dikirim.</p>
+                            <div class="no-messages">
+                                <div class="no-messages-icon">📬</div>
+                                <p>Belum ada pesan yang masuk.</p>
+                                <p>Jadilah yang pertama mengirim pesan!</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -133,7 +159,7 @@ Portofolio ini adalah bukti semangat dan komitmen saya dalam mengejar karier di 
 
     <footer>
         <div class="container">
-            <p>&copy; 2024 Portfolio Website. Created By [Your Name]</p>
+            <p>&copy; 2025 Portfolio Raffa. Crafted with by Raffa - SMK Telkom 1 Medan</p>
         </div>
     </footer>
 
